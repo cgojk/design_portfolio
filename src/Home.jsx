@@ -1,10 +1,12 @@
-
+import React from "react";
+import Features from "./components/Features";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Welcome to the home page!</p>
-    </div>
+    <section className="home container">
+      <h1>Design solutions made easy</h1>
+      <p>With over ten year of experience in various deisng disciplines. I'm your one -stop shop for your design needs.</p>
+      <Features />
+    </section>
   );
 }
