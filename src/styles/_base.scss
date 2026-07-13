@@ -47,47 +47,149 @@ align-items:center;
 
 .features__container{
     
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:var(--space-12);
+  
+     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-20);
+   
+    gap:var(--size-20);
+    padding:var(--size-20);
+
+ 
+    
 
 
 }
 .wrapper__ui_apps{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:var(--size-20);
+    grid-column:1/3;
+    grid-row:3/4;
 
 }
 .features__item{
-    .features__image{
-        margin-top:0 auto;
+    padding:var(--size-40);
+   
+       
+
 
         
-    }
+   
     .features__title{
-        margin-bottom:auto;
+        
         color:var(--clr-neutral-200);
     }
 }
 .graphic{
     background-color:var(--clr-galactic-blue-500);
+    grid-column:1/3;
+    grid-row:2/3;
+    display:grid;
+  
+
+    .features__image{
+     justify-self: end;   
+     align-self: start; 
+    }
+    .features__title{
+          justify-self: start; 
+         align-self: end;     
+
+    }
+   
 
 }
 .ui{
     background-color:var(--clr-summer-yellow-500);
+    // grid-column:1/2;
+    // grid-row:3/4;
+    display:grid;
+
+
+    .features__image{
+         justify-self: end;   
+        align-self: start; 
+    }
+     .features__title{
+        justify-self: start; 
+         align-self: end;    
+          }
+
 
 }
 .apps{
     background-color:var(--clr-pink-500);
+    // grid-column:2/3;
+    // grid-row:3/4;
+    display:grid;
+
+    .features__image{
+         justify-self: end;   
+        align-self: start; 
+    }
+     .features__title{
+        justify-self: start; 
+         align-self: end;    
+          }
+
 
 }
-.fotography{
-    background-color:var(--clr-cyan-500);
+
+
+.illustrations{
+    background-color:var(--clr-light-red-500);
+    grid-column:1/3;
+    grid-row:4/5;
+    display:grid;
+
+    .features__image{
+        justify-self: end;
+        align-self: start;
+    }
+     .features__title{
+        justify-self: start;
+        align-self: end;
+    }
 }
+
+ 
+
+.photography{
+    background-color:var(--clr-cyan-500);
+    grid-column:1/3;
+    grid-row:5/6;
+    display:grid;
+
+    .features__image{
+        justify-self: end;
+        align-self: start;
+    }
+     .features__title{
+        justify-self: start;
+        align-self: end;
+    }
+    
+
+   
+}
+
 
 .motion{
     background-color:var(--clr-dark-purple-500);
+    grid-column:1/3;
+    grid-row:6/7;
+    display:grid;
+
+    .features__image{
+        justify-self: end;
+        align-self: start;
+    }
+     .features__title{
+
+        justify-self: start;
+        align-self: end;
+    }
+
 }

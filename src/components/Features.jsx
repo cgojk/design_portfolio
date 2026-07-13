@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 
-const  graphicDesign = ("/assets/images/pattern-graphic-design.svg");
+import graphicDesign from "../assets/images/pattern-graphic-design.svg";
+import uiUx from "../assets/images/pattern-ui-ux.svg";
+import apps from "../assets/images/pattern-apps.svg";
+import illustrations from "../assets/images/pattern-illustrations.svg";
+import motion from "../assets/images/pattern-motion-graphics.svg";
+import fotography from "../assets/images/pattern-photography.svg";
 
 
- const uiUx = ("../assets/images/pattern-ui-ux.svg");
-const apps =("../assets/images/pattern-apps.svg");
-const illustrations= ("../assets/images/pattern-illustrations.svg");
-const motion = ( "../assets/images/pattern-motion-graphics.svg");
-const fotography= ("../assets/images/pattern-photography.svg");
 
 
 
@@ -38,9 +38,9 @@ export default function Features(){
                     <img src={illustrations} className="features__image" loading="lazy" alt="illustrations pattern" />
                     <h2 className="features__title">Illustrations</h2>
                 </div>
-                <div className="features__item fotography">
+                <div className="features__item photography">
                     <img src={fotography} className="features__image" loading="lazy" alt="fotography pattern" />
-                    <h2 className="features__title">Fotography</h2>
+                    <h2 className="features__title">Photography</h2>
                 </div>
                 <div className="features__item motion">
                     <img src={motion} className="features__image" loading="lazy" alt="motion graphics pattern" />
