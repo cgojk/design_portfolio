@@ -1,6 +1,7 @@
 import React from "react";
 import Features from "./components/Features";
 import Information from "./components/Information";
+import Work from "./components/Work";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <p>With over ten year of experience in various deisng disciplines. I'm your one -stop shop for your design needs.</p>
       <Features />
         <Information />
+        <Work/>
+
     </section>
   );
 }
