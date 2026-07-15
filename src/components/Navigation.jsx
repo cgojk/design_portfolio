@@ -7,13 +7,13 @@ import logo from "../assets/images/logo.svg";
 
 export default function Navigation(){
     return (
- <section className="navigation">
-    <nav className="nav container">
+ <section className="navigation container">
+    <nav className="nav ">
           <Link to="/home" className="links__description">
           <img src={logo} className="logo-image" loading="lazy" alt="gallery title logo " />
           </Link>
             <Link to="/consultation" className="button__consultation">
-          <Button variant="secondary">
+          <Button variant="secondary text-present-5">
            Free Consultation
           </Button>
           </Link>

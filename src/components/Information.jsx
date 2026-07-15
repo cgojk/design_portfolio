@@ -23,7 +23,7 @@ export default function Information(){
                     <p className="text_info text-preset-4"> I love working wiht others to create beautiful design solution. I've designed everything from brand illustrations to ocmplete mobile apps. I'm also handy with a camera!</p>
              
             <Link to="/consultation" className="button__consultation">
-                <Button variant="primary">
+                <Button variant="primary text-present-5">
                     Free Consultation
                 </Button>
             </Link>
