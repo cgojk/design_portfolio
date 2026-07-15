@@ -46,9 +46,7 @@ return (
     <section className="wrapper__images">
         <div className="image-carousel container">
             <div className="image-container">
-                {/* <button className="nav-button left" onClick={handlePreviousClick}>
-                    <img src={arrowPrevious} alt="Previous" />
-                </button> */}
+               
 
                 {imagesData.map((image, index) => (
                     <img 
@@ -59,19 +57,19 @@ return (
                     />
                 ))}
         
-                {/* <button className="nav-button right" onClick={handleNextClick}>
-                    <img src={arrowNext} alt="Next" />
-                </button> */}
+              
             </div>
 
         </div>
-        <button className="nav-button left" onClick={handlePreviousClick}>
+        <div className="wrapper__buttons">
+                <button className="nav-button left" onClick={handlePreviousClick}>
                     <img src={arrowPrevious} alt="Previous" />
                 </button>
 
                   <button className="nav-button right" onClick={handleNextClick}>
                     <img src={arrowNext} alt="Next" />
                 </button>
+        </div>
     </section>
 
        

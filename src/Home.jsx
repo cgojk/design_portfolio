@@ -2,6 +2,7 @@ import React from "react";
 import Features from "./components/Features";
 import Information from "./components/Information";
 import Work from "./components/Work";
+import Booking from "./components/Booking";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Features />
         <Information />
         <Work/>
+        <Booking />
 
     </section>
   );

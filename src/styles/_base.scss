@@ -19,7 +19,39 @@ body {
 
 }
 
+// ============styling the button fro navigaiton bar and booking page========================
 
+.secondary{
+    background-color:var(--clr-light-red-500);
+    color:var(--clr-neutral-100);
+    border:none;
+    padding:var(--size-12) var(--size-20);
+    border-radius:var(--size-4);
+    font-size:var(--fs-400);
+    font-weight:var(--fw-500);
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background-color:var(--clr-summer-yellow-500);
+    }
+}
+
+.primary{
+    background-color:var(--clr-galactic-blue-500);
+    color:var(--clr-neutral-100);
+    border:none;
+    padding:var(--size-12) var(--size-20);
+    border-radius:var(--size-4);
+    font-size:var(--fs-400);
+    font-weight:var(--fw-500);
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background-color:var(--clr-light-red-500);
+    }
+}
 
 .logo-image{
     cursor:pointer;
@@ -285,13 +317,12 @@ img.block {
 }
 
 .nav-button {
-//   position: absolute;
-//   top: 50%;
+
   transform: translateY(-50%);
   width: 44px;
   height: 44px;
-  background-color:red;
-  color:var(--clr-neutral-900);
+  background-color:var(--clr-neutral-900);
+  color:var(--clr-neutral-100);
   border: none;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -322,7 +353,17 @@ img.block {
   opacity: 1;
 }
 
-// .wrapper__images{
-//     position:relative;
+.wrapper__buttons{
+    display:flex;
+    flex-direction:row;
+    gap:var(--size-20);
+    align-items:center;
+    justify-content:center;
+   
 
-// }
+}
+
+.wrapper__images{
+    display:flex;
+    flex-direction:column;
+}

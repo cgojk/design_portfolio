@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import foto from "../assets/images/image-amy.webp"
+import Button from "./UI/Buttons";
 
 
 
@@ -22,9 +23,9 @@ export default function Information(){
                     <p className="text_info text-preset-4"> I love working wiht others to create beautiful design solution. I've designed everything from brand illustrations to ocmplete mobile apps. I'm also handy with a camera!</p>
              
             <Link to="/consultation" className="button__consultation">
-                <button className="btn btn--primary">
+                <Button variant="primary">
                     Free Consultation
-                </button>
+                </Button>
             </Link>
         </div>
     </div>

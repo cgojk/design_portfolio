@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Button from "./UI/Buttons";
 
 import logo from "../assets/images/logo.svg";
 
@@ -12,9 +13,9 @@ export default function Navigation(){
           <img src={logo} className="logo-image" loading="lazy" alt="gallery title logo " />
           </Link>
             <Link to="/consultation" className="button__consultation">
-          <button  className="btn btn--primary">
+          <Button variant="secondary">
            Free Consultation
-          </button>
+          </Button>
           </Link>
       </nav>
   </section>
