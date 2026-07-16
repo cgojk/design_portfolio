@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .image-slide {
+    flex: 0 0 88%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+    
+  .image-slide {
+     flex: 0 0 calc(25% - 12px);
+  }
+}

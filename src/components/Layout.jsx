@@ -1,6 +1,6 @@
 import React from "react"
 import { Outlet } from "react-router-dom"
-import Navigation from "../components/Navigation"
+import Navigation from "./Navigation"
 
 
 export default function Layout() {
@@ -10,7 +10,7 @@ export default function Layout() {
            
                 <Outlet />
            
-          
+             <Navigation />
         </>
     )
 }

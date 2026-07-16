@@ -9,9 +9,21 @@ import arrowNext from "../assets/images/icon-arrow-right.svg";
 
 
 
-export default function ImagesBox() {
 
-const [currentImageIndex, setCurrentImageIndex] = useState(0);
+export default function ImagesBox() {
+   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
+
+     useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+const [currentImageIndex, setCurrentImageIndex] =  useState(0);
 
 console.log(currentImageIndex);
 console.log(imagesData[currentImageIndex].imageSrc);
@@ -38,29 +50,51 @@ useEffect(() => {
 
      console.log(currentImageIndex);
 
+const visibleImages = [];
 
+for (let i = 0; i < 4; i++) {
+  visibleImages.push(
+    imagesData[(currentImageIndex + i) % imagesData.length]
+  );
+}
 
 return (
 <section className="images-boxContent container">
 
     <section className="wrapper__images">
         <div className="image-carousel container">
-            <div className="image-container">
-               
+          
 
-                {imagesData.map((image, index) => (
-                    <img 
-                        src={image.imageSrc} 
-                        alt={image.alt} 
-                        className={ currentImageIndex === index ? 'block' : 'hidden'}
-                        key={image.id} 
-                    />
-                ))}
-        
+             {isLargeScreen ? (
+  <div className="image-container desktop">
+    {visibleImages.map((image) => (
+      <div className="image-slide" key={image.id}>
+        <img src={image.imageSrc} alt={image.alt} />
+      </div>
+    ))}
+  </div>
+) : (
+  <div
+    className="image-container mobile"
+    style={{
+      transform: `translateX(calc(-${currentImageIndex * 85}% - ${currentImageIndex * 16}px))`,
+    }}
+  >
+    {imagesData.map((image) => (
+      <div className="image-slide" key={image.id}>
+        <img src={image.imageSrc} alt={image.alt} />
+      </div>
+    ))}
+  </div>
+)}   
+
+     
+
+
               
-            </div>
+    </div>
 
-        </div>
+       
         <div className="wrapper__buttons">
                 <button className="nav-button left" onClick={handlePreviousClick}>
                     <img src={arrowPrevious} alt="Previous" />
