@@ -59,10 +59,10 @@ for (let i = 0; i < 4; i++) {
 }
 
 return (
-<section className="images-boxContent container">
+<section className="images-boxContent">
 
     <section className="wrapper__images">
-        <div className="image-carousel container">
+ <div className="image-carousel">
           
 
              {isLargeScreen ? (
