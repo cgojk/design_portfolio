@@ -9,19 +9,24 @@ export default function Booking() {
  
           
             <section className="booking__section container">
+            <div className="wrapper__booking--text_button">
                 <div className="booking__container">
+
                     <h2 className="title__booking text-preset-2">Book a call with me</h2>
                     <p className="text_booking text-preset-4"> I'd love to have a chat
                          to see how I can help you. The best first steps is 
                         for us to discuss your project during a
                          free consultation. 
                          Then we can move foward from there.</p>
-             
+             </div>
+         <div className="linkcontainer">
+
             <Link to="/consultation" className="button__consultation">
                 <Button variant="primary text-present-5">
                     Free Consultation
                 </Button>
             </Link>
+       </div>
         </div>
 
           

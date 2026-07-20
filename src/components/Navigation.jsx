@@ -7,7 +7,7 @@ import logo from "../assets/images/logo.svg";
 
 export default function Navigation(){
     return (
- <section className="navigation ">
+ <section className="navigation  ">
     <nav className="nav container">
           <Link to="/home" className="links__description">
           <img src={logo} className="logo-image" loading="lazy" alt="gallery title logo " />

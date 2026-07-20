@@ -6,7 +6,7 @@ import Booking from "./components/Booking";
 
 export default function Home() {
   return (
-    <section className="home">
+    <section className="home container">
       <div className="container hero">
         <h1 className="title__home text-present-1">
           Design solutions made easy

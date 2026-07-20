@@ -44,14 +44,15 @@
 
   
 .information_Amy{
-    padding:var(--size-20);
-  .wrapper__photo--info{
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   gap:var(--size-48);
+padding:var(--size-20);
+.wrapper__photo--info{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:var(--size-56);
+padding:var(--size-40);
 
-   .photo__container{
-    width:100%;
+.photo__container{
+width:100%;
 }
   }
 }
@@ -107,4 +108,19 @@
     width: 100vw;
 
 }
+
+.home{
+    .description__home{
+       
+          text-align:center;
+    }
+}
+.wrapper__booking--text_button{
+   
+   flex-direction:row;
+    gap:var(--size-20);
+    padding:var(--size-40);
+
+}
+
 }
