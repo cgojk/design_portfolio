@@ -112,8 +112,13 @@ align-items:center;
 .features__item{
     padding:var(--size-40);
     border-radius:var(--radius-10);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     cursor: pointer;
    
- 
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
         
    
     .features__title{
@@ -261,6 +266,16 @@ align-items:center;
         color:var(--clr-neutral-400);
         text-align:center;
     }
+}
+.photo__container {
+  width: 100%;
+  max-width: 360px;
+}
+
+.photo__container img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 }

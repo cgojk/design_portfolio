@@ -47,11 +47,12 @@
 padding:var(--size-20);
 .wrapper__photo--info{
 display:grid;
-grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(280px, 445px) 1fr;
 gap:var(--size-56);
 padding:var(--size-40);
 
 .photo__container{
+
 width:100%;
 }
   }
