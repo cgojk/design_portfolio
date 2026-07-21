@@ -2,6 +2,8 @@
 /* ==============================================
             GLOBAL BASE STYLES / HOME PAGE STYLES
    ==============================================*/
+
+
 body {
     background-color:var(--clr-neutral-200);
     color: var(--clr-neutral-900);
@@ -17,6 +19,26 @@ body {
     margin:0 auto;
       padding-inline: var(--space-24);
 
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--clr-galactic-blue-500);
+  outline-offset: 4px;
+}
+
+// =========================================================
+// styling the layout
+// ===========================================
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }
 
 // ============styling the button fro navigaiton bar and booking page========================
@@ -56,7 +78,9 @@ body {
     cursor:pointer;
 }
 
-
+.navigation{
+    margin-bottom:var(--space-24);
+}
 
 .nav{
 display:flex;
@@ -64,7 +88,7 @@ flex-direction:row;
 justify-content:space-between;
 padding:var(--size-16) var(--size-12);
 
-margin-bottom:var(--space-24);
+
 align-items:center;
  
 }

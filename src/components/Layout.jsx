@@ -6,15 +6,23 @@ import Footer from "./Footer"
 
 export default function Layout() {
     return (
-        <>
-            <Navigation />
+       
+    <div className="layout">
+      <Navigation />
 
-           
-                <main>
-               <Outlet />
-                </main>
-           
-             <Footer />
-        </>
+      <main className="main-content">
+        <Outlet />
+      </main>
+
+      <Footer />
+    </div>
+
+        // <>
+        //     <Navigation />
+        //        <main>
+        //        <Outlet />
+        //       </main>
+        //     <Footer />
+        // </>
     )
 }

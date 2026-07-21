@@ -43,7 +43,8 @@ body {
 
 /* Remove default margins */
 html,
-body {
+body
+ {
   margin: 0;
   padding: 0;
   border: 0;
@@ -129,3 +130,12 @@ button {
   cursor: pointer;
 }
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
