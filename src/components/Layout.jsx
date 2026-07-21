@@ -17,12 +17,5 @@ export default function Layout() {
       <Footer />
     </div>
 
-        // <>
-        //     <Navigation />
-        //        <main>
-        //        <Outlet />
-        //       </main>
-        //     <Footer />
-        // </>
     )
 }

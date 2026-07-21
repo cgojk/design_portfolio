@@ -8,7 +8,7 @@ export default function Booking() {
     return (
  
           
-            <section className="booking__section container">
+         <section className="booking__section container">
             <div className="wrapper__booking--text_button">
                 <div className="booking__container">
 
